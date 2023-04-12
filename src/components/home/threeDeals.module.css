@@ -1,0 +1,19 @@
+.dealCard{
+    background-color: #2663a340;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.titleDeal{
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-size: 34px;
+    font-weight: 700;
+    color: #0a4a63;
+    letter-spacing: 4px;
+}
+
+.dealImg{
+    margin-bottom: 20px;
+}

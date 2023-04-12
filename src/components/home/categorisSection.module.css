@@ -1,0 +1,30 @@
+.caragorisCard {
+    padding: 7px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    margin-top: 4px;
+    transition: all .2s;
+    background-color: rgb(38 99 163 / 80%);
+}
+
+.caragorisCard:hover {
+    transform: translate(0px, -4px);
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)
+}
+
+.caragorisCard p {
+    margin-bottom: 0;
+    height: 46px;
+    overflow: hidden;
+    font-weight: 600;
+    color: white;
+}
+
+.caragorisCard img {
+    height: 80px;
+    width: 80px !important;
+    margin: auto;
+    margin-bottom: 5px;
+    max-width: 100%;
+    border-radius: 50%;
+}

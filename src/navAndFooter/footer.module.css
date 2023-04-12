@@ -1,0 +1,132 @@
+.footer{
+    /* background-color: #343a40; */
+    background-color: #5b6064;
+    color: white;
+}
+
+.footer h3{
+    font-size: 23px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid white;
+    width: 80%;
+    padding-bottom: 10px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.footer i{
+    margin-right: .2rem;
+}
+
+.footer ul li{
+    display: block;
+    margin-bottom: 15px;
+}
+
+.footer a{
+    color: white;
+}
+
+.footer a:hover{
+    color: #1ec0ff;
+}
+
+.BgPadding{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.CopyWrite{
+    background-color: black;
+    color: rgb(200, 200, 200);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.CopyWrite p{
+    margin-bottom: 0;
+}
+
+.solcilaLink{
+    margin-bottom: 20px;
+}
+
+.solcilaLink li{
+    display: inline-block !important;
+    text-align: center;
+    margin-right: .2rem;
+}
+
+.solcilaLink li i{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    height: 35px;
+    width: 35px;
+    padding-top: 7px;
+    font-size: 20px;
+}
+
+.solcilaLink li i:hover{
+    /* border: 1px solid rgba(255, 255, 255, 0); */
+    color: white;
+}
+
+.solcilaLink li .fa-facebook-f:hover{
+    background-color: #007bff !important;
+    color: white !important;
+}
+
+.solcilaLink .fa-instagram:hover{
+    background-color: #e83e8c !important;
+    color: white;
+}
+
+.solcilaLink .fa-youtube:hover{
+    background-color: #dc3545 !important;
+    color: white;
+}
+
+.solcilaLink .fa-linkedin-in:hover{
+    background-color: #007bff !important;
+    color: white;
+}
+
+.solcilaLink .fa-twitter:hover{
+    background-color: #007bff !important;
+    color: white;
+}
+
+@media screen and (max-width: 991px){
+    .BgPadding{
+        padding-top: 25px;
+        padding-bottom: 5px;
+    }
+
+    .CopyWrite {
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .BgPadding{
+        padding-top: 12px;
+        padding-bottom: 0px;
+    }
+
+    .footer ul li{
+        display: block;
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .footer{
+        text-align: center;
+    }
+
+    .footer h3{
+        margin: auto;
+        margin-bottom: 12px;
+    }
+}
