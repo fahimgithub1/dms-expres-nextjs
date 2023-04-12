@@ -6,7 +6,7 @@ import React from "react";
 export default function BlogeSection() {
   return (
     <SectionWrapper>
-        <SectionTitle title="Latest Blogs" />
+      <SectionTitle title="Latest Blogs" />
       <div className="row">
         <div className="col-lg-6">
           <div className="p-2">
@@ -20,17 +20,17 @@ export default function BlogeSection() {
           </div>
         </div>
 
-        <div className="col-lg-6">
+        {/* <div className="col-lg-6">
           <div className="p-2">
             <BlogCard />
           </div>
         </div>
-        
+
         <div className="col-lg-6">
           <div className="p-2">
             <BlogCard />
           </div>
-        </div>
+        </div> */}
       </div>
     </SectionWrapper>
   );

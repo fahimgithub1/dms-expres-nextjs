@@ -25,7 +25,7 @@ export default function HeaderCom(props) {
   return (
     <Head>
       <title>{props.title}</title>
-      <meta name="description" content="Ovender Shopping Sit" />
+      <meta name="description" content="DMS Experes Shopping Sit" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
 
       <link rel="icon" href="/logo.png" />

@@ -3,6 +3,7 @@ import ProductView from "@/components/Product/productView";
 import RelatedProduct from "@/components/Product/relatedProduct";
 import Review from "@/components/Product/review";
 import ShopRatting from "@/components/Product/shopRatting";
+import PaymentOffer from "@/components/home/paymentOffer";
 import AddSection from "@/lib/addSection";
 import HeaderCom from "@/lib/header";
 import Footer from "@/navAndFooter/footer";
@@ -36,6 +37,7 @@ export default function ProductPage() {
           <Review id={singleProduct.data.id} />
           <AddSection img={img} />
           <RelatedProduct id={singleProduct.data.id} />
+          <PaymentOffer />
           <Footer />
         </main>
       </>

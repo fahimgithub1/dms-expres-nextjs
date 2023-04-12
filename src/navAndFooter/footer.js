@@ -213,7 +213,7 @@ export default function Footer() {
 
       <div className={`${classes.CopyWrite}`}>
         <p>
-          Copyright © Memo Australia All rights reserved. Developed By Memo
+          Copyright © DMS Exptess Australia All rights reserved. Developed By Memo
           Australia IT Team.
         </p>
       </div>

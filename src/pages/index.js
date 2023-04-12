@@ -20,7 +20,6 @@ export default function Home() {
         <ThreeDeals />
         <Categoris /> 
         <SelectedProduct />
-
         {/* <ShockingSale />*/}
         <DailyProduct />
         <BlogeSection />
