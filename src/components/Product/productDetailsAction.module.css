@@ -132,9 +132,41 @@
     font-size: 13px;
     text-transform: uppercase;
     color: #ffffff;
-    background: var(--logoColor-2);
-    border: 1px solid var(--logoColor-2);
+    background: var(--logoColor-1);
     font-weight: bold;
     border-radius: 9px;
 }
 
+.btnBox button:hover {
+    background: var(--logoColor-2);
+}
+
+.productShare span {
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.productShare .social {
+    display: flex;
+    gap: 25px;
+    font-size: 14px;
+}
+
+.productShare .social a {
+    background-color: var(--logoColor-1);
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 50%;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    text-align: center;
+}
+
+.productShare .social a:hover {
+    background: var(--logoColor-2);
+    border: none;
+    color: white;
+}

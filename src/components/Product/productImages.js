@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 import SmalImagBlox from "./smalImagBlox";
 import ReactImageMagnify from "react-image-magnify";

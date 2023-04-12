@@ -6,12 +6,13 @@ import {
   TwitterShareButton,
   WhatsappShareButton,
 } from "react-share";
+import classes from './productDetailsAction.module.css';
 
 export default function ProductShare() {
   return (
-    <div className="product-share">
+    <div className={`${classes.productShare}`}>
       <span>Share Link:</span>
-      <div className="social">
+      <div className={`${classes.social}`}>
         <FacebookShareButton url={window.location.href}>
           <Link href="#">
             <i className="fa-brands fa-facebook-f"></i>

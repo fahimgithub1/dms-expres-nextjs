@@ -1,0 +1,33 @@
+.sectionTitle2 {
+    text-transform: capitalize;
+    font-size: 26px;
+    font-weight: 700;
+    border-bottom: 7px solid #2663a3;
+    display: inline-block;
+    padding-bottom: 14px;
+}
+
+.TechnicalFocus{
+    border-right: 1px solid black;
+}
+
+.TechnicalFocus ul{
+    list-style: circle;
+}
+
+.FristList{
+    border-right: 1px solid black;
+    margin-right: 10px;
+}
+
+.TechnicalFocus ul li{
+    display: block;
+    font-weight: 500;
+    padding: 0 10px;
+}
+
+.TechnicalFocus ul li span{
+    width: 129px;
+    display: inline-block;
+    overflow: hidden;
+}

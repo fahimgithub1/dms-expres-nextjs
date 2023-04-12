@@ -2325,33 +2325,6 @@ p {
     margin-bottom: -3px;
 }
 
-.product-view-area .part-txt .product-share .social {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 25px;
-    font-size: 14px;
-}
-
-.product-view-area .part-txt .product-share .social a {
-    border: 1px solid black;
-    color: #000000;
-    padding: 5px;
-    border-radius: 50%;
-    height: 28px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 28px;
-    text-align: center;
-}
-
-.product-view-area .part-txt .product-share .social a:hover {
-    background: var(--navColor);
-    border: none;
-    color: white;
-}
-
 .quantity {
     width: 200px;
     height: 40px;
@@ -5510,7 +5483,7 @@ footer p {
     align-items: center;
 
     text-transform: capitalize;
-    font-size: 34px;
+    font-size: 26px;
     font-weight: 700;
 
 }

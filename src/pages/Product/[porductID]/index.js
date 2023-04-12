@@ -2,7 +2,6 @@ import ProductDiscription from "@/components/Product/productDiscription";
 import ProductView from "@/components/Product/productView";
 import RelatedProduct from "@/components/Product/relatedProduct";
 import Review from "@/components/Product/review";
-import ShopRatting from "@/components/Product/shopRatting";
 import PaymentOffer from "@/components/home/paymentOffer";
 import AddSection from "@/lib/addSection";
 import HeaderCom from "@/lib/header";
@@ -32,7 +31,6 @@ export default function ProductPage() {
         <main>
           <Navber />
           <ProductView singleProduct={singleProduct} />
-          <ShopRatting singleProduct={singleProduct} />
           <ProductDiscription singleProduct={singleProduct} />
           <Review id={singleProduct.data.id} />
           <AddSection img={img} />
