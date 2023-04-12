@@ -3,6 +3,7 @@ import {
   useAddToCartMutation,
   useAddToWishListMutation,
 } from "@/pages/api/cardOrderSlice";
+import classes from './productDetailsAction.module.css'
 
 export default function AddToCartAndWish(props) {
   const [timer, setTimer] = useState(null);
@@ -65,7 +66,7 @@ export default function AddToCartAndWish(props) {
   };
 
   return (
-    <div className="btn-box">
+    <div className={`${classes.btnBox}`}>
       {isCartDisavle ? (
         <button id="addToCart" onClick={addCartItemsHandler}>
           <span>
