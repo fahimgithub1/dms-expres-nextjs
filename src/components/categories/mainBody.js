@@ -3,7 +3,7 @@ import CatagoriProducts from "./catagoriProducts";
 import CatagoriSortby from "./catagoriSortby";
 import CategorisLeft from "./categorisLeft";
 import { useDispatch, useSelector } from "react-redux";
-import { useGetFilterProductsQuery } from "@/pages/api/apiSlices";
+import { useGetFilterProductsQuery } from "@/pages/xCallapi/apiSlices";
 import { setProduct, setQuentity } from "@/store/slices/filterWithPrice";
 
 export default function MainBody(props) {
@@ -35,10 +35,10 @@ export default function MainBody(props) {
   }
 
   return (
-    <div className="row mt-2 mt-lg-5 mt-md-3">
-      <CategorisLeft categori={props.categori} />
-      <div className="col-xl-9 col-lg-9 col-md-12 col-sm-12 AllProduct">
-        <CatagoriSortby />
+    <div className="pt-lg-4 pt-md-3">
+      {/* <CategorisLeft categori={props.categori} /> */}
+      <div className="AllProduct">
+        <CatagoriSortby categori={props.categori}  />
         <CatagoriProducts isItemAvilable={isItemAvilable} lodding={lodding} />
       </div>
     </div>

@@ -1,7 +1,7 @@
 import Lodding from "@/lib/lodding";
-import { useGetCustomerDetailsMutation } from "@/pages/api/authenticationApiSlices";
-import { useAddaddresSaveCardMutation } from "@/pages/api/cardOrderSlice";
-import { useGetAddressesQuery } from "@/pages/api/customerSlices";
+import { useGetCustomerDetailsMutation } from "@/pages/xCallapi/authenticationApiSlices";
+import { useAddaddresSaveCardMutation } from "@/pages/xCallapi/cardOrderSlice";
+import { useGetAddressesQuery } from "@/pages/xCallapi/customerSlices";
 import React, { useEffect, useState } from "react";
 
 export default function SaveAddres(props) {

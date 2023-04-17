@@ -1,9 +1,12 @@
 import { setShortMethod } from "@/store/slices/filterWithPrice";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
+import classes from "./caragoris.module.css";
+import PriceRangeSlider from "./priceRangeSlider";
+// import CategoriFilerPrice from "./categoriFilerPrice";
 
-export default function CatagoriSortby() {
-  let shortOption = ''
+export default function CatagoriSortby(props) {
+  let shortOption = "";
 
   const dispatch = useDispatch();
 
@@ -12,31 +15,52 @@ export default function CatagoriSortby() {
   });
 
   return (
-    <div className="CtagorisFilter">
-      <div className="ShortIcon">
-        <span className="DisNoneinPhone">{totalItems} Items Available</span>
-        <span className="CatagoriFilter showInphone">Filter</span>
-      </div>
-
-      <div className="ShortBy">
-        <div>
-          <span>Short By </span>
-          <select
-            onChange={(e) => {
-              // setShortOption();
-              shortOption = e.target.value
+    <div className={classes.CtagorisFilter}>
+      <ul>
+        <li>
+          <button
+            onClick={() => {
+              shortOption = "A - Z";
               dispatch(setShortMethod(shortOption));
             }}
           >
-            <option value="Default">Default</option>
-            <option value="A - Z">A - Z</option>
-            <option value="Z - A">Z - A</option>
-            <option value="Lowest">Lowest</option>
-            <option value="Height">Height</option>
-            {/* <option value="Pupoler Product">Pupoler Product</option> */}
-          </select>
-        </div>
-      </div>
+            A - Z
+          </button>
+        </li>
+
+        <li>
+          <button
+            onClick={() => {
+              shortOption = "Z - A";
+              dispatch(setShortMethod(shortOption));
+            }}
+          >
+            Z - A
+          </button>
+        </li>
+
+        <li>
+          <button
+            onClick={() => {
+              shortOption = "Lowest";
+              dispatch(setShortMethod(shortOption));
+            }}
+          >
+            Lowest
+          </button>
+        </li>
+
+        <li>
+          <button
+            onClick={() => {
+              shortOption = "Height";
+              dispatch(setShortMethod(shortOption));
+            }}
+          >
+            Height
+          </button>
+        </li>
+      </ul>
     </div>
   );
 }

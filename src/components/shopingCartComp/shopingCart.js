@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import CartCalculation from "./cartCalculation";
 import CartTable from "./cartTable";
-import { useGetCartDatilesQuery } from "@/pages/api/customerSlices";
+import { useGetCartDatilesQuery } from "@/pages/xCallapi/customerSlices";
 import Lodding from "@/lib/lodding";
 
 export default function ShopingCart(props) {

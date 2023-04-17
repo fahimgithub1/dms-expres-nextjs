@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 import { ApiProvider } from "@reduxjs/toolkit/dist/query/react";
 import { Provider } from "react-redux";
 import store from "../store/index";
-import { productsApi } from "./api/apiSlices";
+import { productsApi } from "./xCallapi/apiSlices";
 
 function App({ Component, pageProps }) {
   return (

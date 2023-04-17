@@ -1,0 +1,80 @@
+.seeMore{
+    background: none;
+    padding: 0 !important;
+    display: block !important;
+    color: black;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.seeMore:hover{
+    background: none;
+    padding: 0 !important;
+    display: block !important;
+    color: black;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.mainImage{
+    position: relative;
+}
+
+.mainImage:hover .zoomDIv{
+    visibility: visible;
+}
+
+.zoomDIv {
+    background-color: rgba(0, 0, 0, 0.234);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 12px;
+    height: 100%;
+    width: 94%;
+    border-radius: 10px;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.zoomDIv i {
+ font-size: 45px;
+ color: rgb(59, 59, 59);
+ opacity: 1;
+}
+
+.allImages{
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    height: min-content;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.673);
+    z-index: 10000000000;
+    overflow: scroll;
+    padding: 0 10px;
+    height: 100%;
+}
+
+.allImages img{
+    max-width: 900%;
+    margin-bottom: 20px;
+}
+
+.allImages i{
+    color: var(--logoColor-2);
+    padding: 10px 16px;
+    background-color: white;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}

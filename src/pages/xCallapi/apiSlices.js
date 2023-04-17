@@ -14,6 +14,10 @@ export const productsApi = apiBaseSlices.injectEndpoints({
       query: (productName) => `api/products?name=${productName}`,
     }),
 
+    getProductReviews: builder.query({
+      query: (productID) => `api/reviews?product_id=${productID}`,
+    }),
+
     getSingleProducts: builder.query({
       query: (id) => `api/products/${id}`,
     }),
@@ -67,6 +71,7 @@ export const productsApi = apiBaseSlices.injectEndpoints({
 export const {
   useGetAllProductsQuery,
   useGetProductsNameQuery,
+  useGetProductReviewsQuery,
   useGetProductsWithPriceQuery,
   useGetCategoriProductsQuery,
   useGetFilterProductsQuery,

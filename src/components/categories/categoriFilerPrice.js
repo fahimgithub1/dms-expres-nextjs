@@ -1,4 +1,4 @@
-import { useGetProductsWithPriceQuery } from "@/pages/api/apiSlices";
+import { useGetProductsWithPriceQuery } from "@/pages/xCallapi/apiSlices";
 import { FilterWithPrice } from "@/store/slices/filterWithPrice";
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";

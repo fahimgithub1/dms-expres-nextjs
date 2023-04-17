@@ -1,4 +1,4 @@
-import { useGetAllCategorisQuery } from "@/pages/api/apiSlices";
+import { useGetAllCategorisQuery } from "@/pages/xCallapi/apiSlices";
 import Link from "next/link";
 
 export default function MobileMenu(props) {

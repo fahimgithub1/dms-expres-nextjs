@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import {
   useAddToCartMutation,
   useAddToWishListMutation,
-} from "@/pages/api/cardOrderSlice";
+} from "@/pages/xCallapi/cardOrderSlice";
 import classes from './productDetailsAction.module.css'
+import Cookies from "js-cookie";
 
 export default function AddToCartAndWish(props) {
   const [timer, setTimer] = useState(null);
@@ -15,11 +16,11 @@ export default function AddToCartAndWish(props) {
   const isCartDisavle = props.productInfo.in_stock;
   const product_id = props.productInfo.id;
 
-  const isBrowser = typeof window !== "undefined";
   const [token, setToken] = useState(null);
 
   useEffect(() => {
-    setToken(isBrowser ? localStorage.getItem("token") : null);
+    setToken(Cookies.get('authToken'));
+    ;
   }, []);
 
   const AddCartInfo = {
@@ -27,8 +28,6 @@ export default function AddToCartAndWish(props) {
     quantity: quantity,
     token,
   };
-
-  // const dispatch = useDispatch();
 
   const addCartItemsHandler = () => {
     addToCart(AddCartInfo)

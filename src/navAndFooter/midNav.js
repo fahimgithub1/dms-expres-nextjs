@@ -1,6 +1,6 @@
-import { useGetAllProductsQuery } from "@/pages/api/apiSlices";
-import { useGetWishListQuery } from "@/pages/api/cardOrderSlice";
-import { useGetCartDatilesQuery } from "@/pages/api/customerSlices";
+import { useGetAllProductsQuery } from "@/pages/xCallapi/apiSlices";
+import { useGetWishListQuery } from "@/pages/xCallapi/cardOrderSlice";
+import { useGetCartDatilesQuery } from "@/pages/xCallapi/customerSlices";
 import Link from "next/link";
 import { useState } from "react";
 import CartSummary from "./cartSumary";

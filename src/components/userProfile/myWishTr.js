@@ -2,7 +2,7 @@ import Lodding from "@/lib/lodding";
 import {
   useGetWishListQuery,
   useRemoveWishlistMutation,
-} from "@/pages/api/cardOrderSlice";
+} from "@/pages/xCallapi/cardOrderSlice";
 import React, { useEffect, useState } from "react";
 
 export default function MyWishTr(props) {

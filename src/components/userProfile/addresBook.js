@@ -1,5 +1,5 @@
 import Lodding from "@/lib/lodding";
-import { useGetAddressesQuery } from "@/pages/api/customerSlices";
+import { useGetAddressesQuery } from "@/pages/xCallapi/customerSlices";
 import React, { useEffect, useState } from "react";
 import NewAddress from "./newAddress";
 

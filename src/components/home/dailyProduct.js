@@ -2,7 +2,7 @@ import SectionWrapper from "@/layouts/sectionWrapper";
 import Lodding from "@/lib/lodding";
 import ProductCard from "@/lib/productCard";
 import SectionTitle from "@/lib/sectionTitle";
-import { useGetAllProductsQuery } from "@/pages/api/apiSlices";
+import { useGetAllProductsQuery } from "@/pages/xCallapi/apiSlices";
 import React, { useState } from "react";
 
 let comimg = require("../../../public/images/prduct.jpg")

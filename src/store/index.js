@@ -1,4 +1,4 @@
-import { productsApi } from "@/pages/api/apiSlices";
+import { productsApi } from "@/pages/xCallapi/apiSlices";
 import { configureStore } from "@reduxjs/toolkit";
 import cartItemsSlices from "./slices/cartItems";
 import WishItemsSlices from "./slices/wishItems";

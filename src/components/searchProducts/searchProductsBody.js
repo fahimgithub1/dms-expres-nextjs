@@ -3,7 +3,7 @@ import BodyWrapper from "@/layouts/bodyWrapper";
 import Lodding from "@/lib/lodding";
 import PagesHeros from "@/lib/pagesHeros";
 import ProductCard from "@/lib/productCard";
-import { useGetProductsNameQuery } from "@/pages/api/apiSlices";
+import { useGetProductsNameQuery } from "@/pages/xCallapi/apiSlices";
 import { useRouter } from "next/router";
 import React, { Fragment } from "react";
 

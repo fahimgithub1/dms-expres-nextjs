@@ -1,0 +1,32 @@
+.CtagorisFilter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 8px;
+    border-radius: 5px;
+}
+
+.CtagorisFilter ul li button {
+    border: 2px solid var(--logoColor-1);
+    padding: 7px 20px;
+    border-radius: 25px;
+    background: none;
+    color: black;
+    font-weight: 400;
+}
+
+.CtagorisFilter ul li:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+@media screen and (max-width: 1023px) {
+    .CtagorisFilter ul li:not(:last-child) {
+        margin-right: .5rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .CtagorisFilter {
+        margin-top: 1rem !important;
+    }
+}

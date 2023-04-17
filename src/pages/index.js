@@ -1,7 +1,6 @@
 import Categoris from "@/components/home/categoris";
 import DailyProduct from "@/components/home/dailyProduct";
 import Heros from "@/components/home/heros";
-import ShockingSale from "@/components/home/ShockingSale";
 import Footer from "@/navAndFooter/footer";
 import Navber from "@/navAndFooter/navber";
 import HeaderCom from "../lib/header";
@@ -20,7 +19,6 @@ export default function Home() {
         <ThreeDeals />
         <Categoris /> 
         <SelectedProduct />
-        {/* <ShockingSale />*/}
         <DailyProduct />
         <BlogeSection />
         <PaymentOffer />

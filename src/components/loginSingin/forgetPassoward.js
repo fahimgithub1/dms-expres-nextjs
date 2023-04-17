@@ -1,4 +1,4 @@
-import { useForgotPasswordMutation } from "@/pages/api/authenticationApiSlices";
+import { useForgotPasswordMutation } from "@/pages/xCallapi/authenticationApiSlices";
 import React, { useState } from "react";
 
 export default function ForgetPassoward(props) {

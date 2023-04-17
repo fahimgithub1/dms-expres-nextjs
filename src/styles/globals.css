@@ -73,7 +73,7 @@ button:hover {
 
 .sectionTitle {
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     text-transform: capitalize;
 }
 
@@ -652,6 +652,10 @@ input:hover {
     padding-bottom: 0rem !important;
 }
 
+.Mobile20{
+    width: 20%;
+}
+
 .Catagori .Catagori2 {
     border-radius: 7px;
 }
@@ -754,16 +758,6 @@ input:hover {
 
 
 /* filter part start*/
-.CtagorisFilter {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #d8d8d8;
-    padding: 10px 8px;
-    border-radius: 5px;
-    border: 1px solid #d1cccc;
-    color: #444;
-}
 
 @media screen and (min-width: 1100px) {
     .CatagorisPage {
@@ -775,26 +769,6 @@ input:hover {
     .CatagorisPage .tab-content {
         margin-bottom: 0 !important;
     }
-}
-
-.CtagorisFilter select {
-    border-radius: 5px;
-    padding: 2px 5px;
-    color: #744444;
-    width: 120px;
-    max-width: 120px;
-}
-
-.CtagorisFilter select:focus {
-    outline: none;
-}
-
-.CatagoriFilter {
-    background: #ff863f;
-    padding: 5px;
-    border-radius: 4px;
-    color: white;
-    display: none;
 }
 
 @media screen and (max-width: 991px) {
@@ -812,12 +786,6 @@ input:hover {
 
     .AllProductImg {
         height: 150px;
-    }
-}
-
-@media screen and (max-width: 575px) {
-    .CtagorisFilter {
-        margin-top: 1rem !important;
     }
 }
 
@@ -5245,7 +5213,7 @@ p {
 
 .category-sub-menu ul li a:hover,
 .category-sub-menu ul li a:focus {
-    color: #fe5502;
+    color: var(--logoColor-2);
 }
 
 .category-sub-menu img {
@@ -5432,11 +5400,7 @@ footer p {
 /* categoris end */
 
 /* Shocking Sale start */
-.ProductCard {
-    margin-bottom: 20px;
-}
-
-.progress {
+/* .progress {
     width: 95%;
     height: 18px;
     overflow: hidden;
@@ -5457,25 +5421,7 @@ footer p {
     padding-bottom: 15px;
     border-radius: 10px;
     box-shadow: 0 0 7px 1px #b1afaf
-}
-
-.ProductCard p {
-    margin-bottom: 0px;
-}
-
-.ProductCard .ManPrice {
-    text-decoration: line-through;
-    font-size: 14px;
-    color: rgb(93, 93, 93);
-}
-
-.ProductCard img {
-    margin-bottom: 15px;
-}
-
-.ProductCard .progress {
-    margin-top: 15px;
-}
+} */
 
 .sectionTitle {
     display: flex;
@@ -5515,60 +5461,6 @@ footer p {
 
 
 /* Product start */
-.ProductCard1 {
-    padding: 5px;
-    border-radius: 10px;
-    background-color: rgb(229, 229, 229);
-    transition: .5s all;
-}
-
-.ProductCard1:hover {
-    transform: translate(0px, -5px);
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-.ProductCard1 img {
-    height: 180px;
-    margin-bottom: 5px;
-}
-
-.ProductCard1 .Pname {
-    margin-bottom: 0.5rem !important;
-    height: 40px;
-    line-height: 20px;
-    overflow: hidden;
-    font-size: 14px;
-    margin-bottom: 15px;
-    color: black;
-    font-weight: 600;
-}
-
-.ProductCard1 .price ul {
-    font-size: 12px;
-    color: var(--navColor);
-}
-
-.ProductCard1 .sold {
-    text-align: right;
-    color: green;
-    font-size: 13px;
-    margin-top: -20px;
-    margin-bottom: 10px;
-}
-
-.ProductCard1 button {
-    padding: 3px 7px;
-    border-radius: 12px;
-    width: 49%;
-    font-weight: 600;
-    font-size: 16px;
-}
-
-.ProductCard1 .ProductBtn {
-    display: flex;
-    justify-content: space-between;
-}
-
 .DailyDiscovBTn {
     text-align: center;
     padding: 0;
@@ -5619,6 +5511,9 @@ footer p {
     font-weight: 500;
 }
 
+.ProductCard{
+    margin-bottom: 20px;
+}
 /* ovender mall end */
 
 /* MostPopular Section start */
@@ -6944,6 +6839,10 @@ button.FaBtn.RegistBtn.LoginBtn {
         padding-left: 10px;
         padding-right: 10px;
     }
+
+    .Mobile50{
+        width: 50%;
+    }
 }
 
 .orederQuantity {
@@ -6983,6 +6882,7 @@ button.FaBtn.RegistBtn.LoginBtn {
 .width-110px {
     width: 110px;
 }
+
 
 /* color  */
 :root {

@@ -1,5 +1,5 @@
 import HerosWrapper from "@/layouts/herosWrapper";
-import { useGetSliderQuery } from "@/pages/api/apiSlices";
+import { useGetSliderQuery } from "@/pages/xCallapi/apiSlices";
 import React from "react";
 
 export default function Heros() {

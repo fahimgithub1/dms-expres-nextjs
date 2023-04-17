@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import {
   useAddToCartMutation,
   useAddToWishListMutation,
-} from "@/pages/api/cardOrderSlice";
+} from "@/pages/xCallapi/cardOrderSlice";
 import classes from "./productCard.module.css";
 
 export default function ProductCard(props) {

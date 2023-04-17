@@ -1,26 +1,22 @@
-import { useRemovespecificCartMutation } from "@/pages/api/cardOrderSlice";
+import { useRemovespecificCartMutation } from "@/pages/xCallapi/cardOrderSlice";
+import Cookies from "js-cookie";
 import React, { useEffect, useState } from "react";
-// import { removeItemsSummary } from "@/store/slices/cartItems";
-import { useDispatch } from "react-redux";
 
 export default function CartSummaryTh(props) {
   const itemId = props.id;
-  // const dispatch = useDispatch();
   
   const [timer, setTimer] = useState(null);
-
-  const isBrowser = typeof window !== "undefined";
   const [token, setToken] = useState(null);
 
   useEffect(() => {
-    setToken(isBrowser ? localStorage.getItem("token") : null);
+    setToken(Cookies.get('authToken'));
+    
   }, []);
 
   const [RemoveSpecificCart] = useRemovespecificCartMutation();
 
   const deletHandle = (event) => {
     event.preventDefault();
-    // dispatch(removeItemsSummary(productId));
     RemoveSpecificCart({ cart_item_id: itemId, token })
       .unwrap()
       .then((response) => {

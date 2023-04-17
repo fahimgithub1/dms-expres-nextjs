@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import WishTable from "./wishTable";
-import { useGetWishListQuery } from "@/pages/api/cardOrderSlice";
+import { useGetWishListQuery } from "@/pages/xCallapi/cardOrderSlice";
 import Lodding from "@/lib/lodding";
 
 export default function Wishcomp() {

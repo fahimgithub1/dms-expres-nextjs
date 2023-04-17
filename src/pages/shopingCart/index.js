@@ -7,7 +7,7 @@ import PagesHeros from "@/lib/pagesHeros";
 import Footer from "@/navAndFooter/footer";
 import Navber from "@/navAndFooter/navber";
 import React, { useEffect, useState } from "react";
-import { useGetCartDatilesQuery } from "../api/customerSlices";
+import { useGetCartDatilesQuery } from "../xCallapi/customerSlices";
 
 export default function ShopingCartpage() {
   const [showCart, setShowcCart] = useState(true);

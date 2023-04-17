@@ -15,7 +15,7 @@ export default function CatagoriProducts(props) {
       {
         categoriProduct = products.map((item) => (
           <div
-            className="DuleProduct col-6 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-md-4 col-sm-4 Mobile50"
+            className="DuleProduct Mobile20 col-md-4 col-sm-6 Mobile50"
             key={item.id}
           >
             <ProductCard

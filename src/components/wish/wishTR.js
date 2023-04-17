@@ -1,4 +1,5 @@
-import { useRemoveWishlistMutation } from "@/pages/api/cardOrderSlice";
+import { useRemoveWishlistMutation } from "@/pages/xCallapi/cardOrderSlice";
+import Cookies from "js-cookie";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
@@ -6,11 +7,9 @@ export default function WishTR(props) {
   const [timer, setTimer] = useState(null);
   const [RemoveWishList] = useRemoveWishlistMutation();
 
-  const isBrowser = typeof window !== "undefined";
   const [token, setToken] = useState(null);
-
   useEffect(() => {
-    setToken(isBrowser ? localStorage.getItem("token") : null);
+    setToken(Cookies.get('authToken'));
   }, []);
 
   const handlemDeleteItems = (id) => {

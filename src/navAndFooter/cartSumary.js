@@ -8,7 +8,6 @@ export default function CartSummary(props) {
   
   let cartLength = 0;
   let cartTotalPrice = 0;
-
   if (cartData !== undefined) {
     cartLength = cartData.items_count;
     cartTotalPrice = Number(cartData.sub_total);

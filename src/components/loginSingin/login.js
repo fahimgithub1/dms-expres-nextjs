@@ -1,7 +1,7 @@
 import {
   useGetCustomerDetailsMutation,
   useLoginAuthenticMutation,
-} from "@/pages/api/authenticationApiSlices";
+} from "@/pages/xCallapi/authenticationApiSlices";
 import { getCustomer, setToken } from "@/store/slices/customerInfo";
 import { useRouter } from "next/router";
 import { useState } from "react";
@@ -34,7 +34,7 @@ export default function Login(props) {
       .then((response) => {
         const token = response.token;
 
-        localStorage.setItem("token", token);
+        // localStorage.setItem("token", token);
         Cookies.set('authToken', token);
 
         dispatch(setToken({ token }));

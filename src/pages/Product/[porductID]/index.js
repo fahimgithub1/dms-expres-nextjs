@@ -2,12 +2,12 @@ import ProductDiscription from "@/components/Product/productDiscription";
 import ProductView from "@/components/Product/productView";
 import RelatedProduct from "@/components/Product/relatedProduct";
 import Review from "@/components/Product/review";
+import Sustainability from "@/components/Product/sustainability";
 import PaymentOffer from "@/components/home/paymentOffer";
-import AddSection from "@/lib/addSection";
 import HeaderCom from "@/lib/header";
 import Footer from "@/navAndFooter/footer";
 import Navber from "@/navAndFooter/navber";
-import { useGetSingleProductsQuery } from "@/pages/api/apiSlices";
+import { useGetSingleProductsQuery } from "@/pages/xCallapi/apiSlices";
 import { useRouter } from "next/router";
 
 const img = "";
@@ -32,9 +32,10 @@ export default function ProductPage() {
           <Navber />
           <ProductView singleProduct={singleProduct} />
           <ProductDiscription singleProduct={singleProduct} />
-          <Review id={singleProduct.data.id} />
-          <AddSection img={img} />
+          <Sustainability />
+          
           <RelatedProduct id={singleProduct.data.id} />
+          <Review id={singleProduct.data.id} />
           <PaymentOffer />
           <Footer />
         </main>

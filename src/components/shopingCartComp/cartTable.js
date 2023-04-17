@@ -1,41 +1,17 @@
-import { useUpdateCartMutation } from "@/pages/api/cardOrderSlice";
+import { useUpdateCartMutation } from "@/pages/xCallapi/cardOrderSlice";
 import React, { useEffect, useState } from "react";
 import CartTr from "./cartTr";
+import Cookies from "js-cookie";
 
 export default function CartTable(props) {
   const cartData = props.cartdata.data;
-
-  // const [updateCart] = useUpdateCartMutation();
-
-  // const data = {
-  //   qty: {
-  //     31: 6,
-  //   },
-  // };
-
   var raw = {
     qty: {},
   };
 
-  const isBrowser = typeof window !== "undefined";
-  const [token, setToken] = useState(null);
-
-  useEffect(() => {
-    setToken(isBrowser ? localStorage.getItem("token") : null);
-  }, []);
+  const token = Cookies.get("authToken");
 
   const UpsateCard = () => {
-    // console.log(data);
-
-    // updateCart({data, token})
-    //   .unwrap()
-    //   .then((response) => {
-    //     console.log(response);
-    //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //   });
-
     var myHeaders = new Headers();
     myHeaders.append("Accept", "application/json	");
     myHeaders.append("Authorization", `Bearer ${token}`);

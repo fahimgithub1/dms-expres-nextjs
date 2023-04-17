@@ -1,4 +1,4 @@
-import { useGetFilterProductsQuery, useGetProductsWithPriceQuery } from "@/pages/api/apiSlices";
+import { useGetFilterProductsQuery, useGetProductsWithPriceQuery } from "@/pages/xCallapi/apiSlices";
 import React, { useState } from "react";
 import InputRange from "react-input-range";
 import "react-input-range/lib/css/index.css";

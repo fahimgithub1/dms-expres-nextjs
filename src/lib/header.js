@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { getCustomer, getTokens, setToken } from "@/store/slices/customerInfo";
-import { useGetCustomerDetailsMutation } from "@/pages/api/authenticationApiSlices";
+import { useGetCustomerDetailsMutation } from "@/pages/xCallapi/authenticationApiSlices";
 import Cookies from "js-cookie";
 
 export default function HeaderCom(props) {

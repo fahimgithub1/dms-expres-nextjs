@@ -7,7 +7,7 @@ import { FreeMode } from "swiper";
 import "swiper/css";
 import "swiper/css/free-mode";
 import CategorisCard from "./CategorisCard";
-import { useGetAllCategorisQuery } from "@/pages/api/apiSlices";
+import { useGetAllCategorisQuery } from "@/pages/xCallapi/apiSlices";
 import Lodding from "@/lib/lodding";
 import SectionWrapper from "@/layouts/sectionWrapper";
 

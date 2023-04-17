@@ -1,4 +1,4 @@
-import { useUpdateAccountMutation } from "@/pages/api/customerSlices";
+import { useUpdateAccountMutation } from "@/pages/xCallapi/customerSlices";
 import React, { useEffect, useState } from "react";
 
 export default function UpdateAddresFrom(props) {

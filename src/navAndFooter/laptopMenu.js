@@ -1,4 +1,4 @@
-import { useGetCategorisChildQuery } from "@/pages/api/apiSlices";
+import { useGetCategorisChildQuery } from "@/pages/xCallapi/apiSlices";
 import Link from "next/link";
 
 export default function LaptopMenu(props) {

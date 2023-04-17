@@ -1,12 +1,10 @@
-import CategorisHeros from "@/components/categories/categorisHeros";
 import MainBody from "@/components/categories/mainBody";
+import PaymentOffer from "@/components/home/paymentOffer";
 import SectionWrapper from "@/layouts/sectionWrapper";
 import HeaderCom from "@/lib/header";
 import Footer from "@/navAndFooter/footer";
 import Navber from "@/navAndFooter/navber";
-import {
-  useGetAllCategorisQuery,
-} from "@/pages/api/apiSlices";
+import { useGetAllCategorisQuery } from "@/pages/xCallapi/apiSlices";
 import { useRouter } from "next/router";
 import React from "react";
 
@@ -37,12 +35,10 @@ export default function Categories() {
 
       <main>
         <Navber />
-
         <SectionWrapper sectionClass="MainBodyTop HerosSection">
-          <CategorisHeros image_url={categori.image_url} />
           <MainBody productParameters={productParameters} categori={categori} />
         </SectionWrapper>
-
+        <PaymentOffer />
         <Footer />
       </main>
     </>

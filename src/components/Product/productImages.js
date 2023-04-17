@@ -1,37 +1,59 @@
-import React from "react";
-import SmalImagBlox from "./smalImagBlox";
-import ReactImageMagnify from "react-image-magnify";
+import React, { useState } from "react";
+import classes from "./productImages.module.css";
 
 export default function ProductImages(props) {
-  const frist_img = props.images[0];
+  const [limit, setLimit] = useState(2);
+  const [isShoeAllImages, setIsShoeAllImages] = useState(false);
+  var isShowSeeMore = true;
+
+  if (limit >= props.images.length) {
+    isShowSeeMore = false;
+  }
+
+  const showAllImages = () => {
+    if(!isShoeAllImages){
+      setIsShoeAllImages(true);
+    }else{
+      setIsShoeAllImages(false);
+    }
+  };
 
   return (
-    <div className="col-lg-7 col-md-7 col-sm-7">
-      <div className="col-6">
-        <div className="fluid__image-container">
-          <ReactImageMagnify
-            {...{
-              smallImage: {
-                alt: "Wristwatch by Ted Baker London",
-                isFluidWidth: true,
-                src: frist_img.url,
-              },
-              largeImage: {
-                src: frist_img.url,
-                width: 1200,
-                height: 1800,
-              },
-              shouldUsePositiveSpaceLens: true,
-            }}
-          />
-        </div>
+    <div className="col-lg-7 col-md-12 col-sm-7">
+      <div className="row">
+        {props.images.slice(0, limit).map((item, index) => (
+          <div className={`col-6 mb-3 ${classes.mainImage}`} key={index}>
+            <img src={item.url} />
+
+            <div className={`${classes.zoomDIv}`} onClick={showAllImages}>
+              <i class="fa fa-light fa-magnifying-glass-plus"></i>
+            </div>
+          </div>
+        ))}
       </div>
 
-      <div className="SmallImg d-flex">
-        {props.images.map((item) => {
-          <SmalImagBlox key={item.id} smalHref={item.small_image_url} />;
-        })}
-      </div>
+      {isShowSeeMore && (
+        <button
+          className={`${classes.seeMore}`}
+          onClick={() => {
+            setLimit(limit + 2);
+          }}
+        >
+          See More
+          <i class="fa-solid fa-chevron-down ps-2"></i>
+        </button>
+      )}
+
+      {isShoeAllImages && (
+        <div className={classes.allImages}>
+          <div className="d-flex justify-content-end">
+            <i class="fa-solid fa-xmark" onClick={showAllImages}></i>
+          </div>
+          {props.images.slice(0, limit).map((item, index) => (
+            <img src={item.url} key={index} />
+          ))}
+        </div>
+      )}
     </div>
   );
 }

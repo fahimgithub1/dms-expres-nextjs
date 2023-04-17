@@ -7,7 +7,7 @@ import { FreeMode } from "swiper";
 import "swiper/css";
 import "swiper/css/free-mode";
 import ProductCard from "@/lib/productCard";
-import { useGetRelatedProductsQuery } from "@/pages/api/apiSlices";
+import { useGetRelatedProductsQuery } from "@/pages/xCallapi/apiSlices";
 import RelatedProductCard from "./relatedProductCard";
 
 const productInfo = [
@@ -136,7 +136,6 @@ export default function RelatedProduct(props) {
             slidesPerView: 5,
           },
         }}
-
       >
         {RelatedPRoductDiv}
       </Swiper>

@@ -1,7 +1,7 @@
 import {
   useGetCustomerDetailsMutation,
   useGetLogoutQuery,
-} from "@/pages/api/authenticationApiSlices";
+} from "@/pages/xCallapi/authenticationApiSlices";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";

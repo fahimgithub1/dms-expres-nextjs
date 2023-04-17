@@ -1,7 +1,7 @@
 import {
   useGetLogoutQuary,
   useRegisterMutation,
-} from "@/pages/api/authenticationApiSlices";
+} from "@/pages/xCallapi/authenticationApiSlices";
 import React, { useState } from "react";
 
 export default function SingIn(props) {
