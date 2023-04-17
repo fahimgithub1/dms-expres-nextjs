@@ -7,6 +7,15 @@ export default function CartTr(props) {
 
   const itemId = props.id;
   const [quantity, setQuantity] = useState(props.quantity);
+  
+  const isBrowser = typeof window !== "undefined";
+  const [token, setToken] = useState(null);
+  // const token = Cookies.get('authToken');
+  console.log("token")
+
+  useEffect(() => {
+    setToken(isBrowser ? localStorage.getItem("token") : null);
+  }, []);
 
   const handlemInusItems = (event) => {
     event.preventDefault();
@@ -33,13 +42,6 @@ export default function CartTr(props) {
       console.log(props.raw);
     }
   };
-
-  const isBrowser = typeof window !== "undefined";
-  const [token, setToken] = useState(null);
-
-  useEffect(() => {
-    setToken(isBrowser ? localStorage.getItem("token") : null);
-  }, []);
 
   const [RemoveSpecificCart] = useRemovespecificCartMutation();
 

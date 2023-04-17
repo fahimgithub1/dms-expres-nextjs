@@ -8,18 +8,21 @@ import Footer from "@/navAndFooter/footer";
 import Navber from "@/navAndFooter/navber";
 import React, { useEffect, useState } from "react";
 import { useGetCartDatilesQuery } from "../xCallapi/customerSlices";
+import Cookies from "js-cookie";
 
 export default function ShopingCartpage() {
   const [showCart, setShowcCart] = useState(true);
   const [showShopingForm, setShowShopingForm] = useState(false);
   const [showOrderComplited, setShowOrderComplited] = useState(false);
 
-  const isBrowser = typeof window !== "undefined";
-  const [token, setToken] = useState(null);
+  // const isBrowser = typeof window !== "undefined";
+  // const [token, setToken] = useState(null);
 
-  useEffect(() => {
-    setToken(isBrowser ? localStorage.getItem("token") : null);
-  }, []);
+  // useEffect(() => {
+  //   setToken(isBrowser ? localStorage.getItem("token") : null);
+  // }, []);
+
+  const token = Cookies.get('authToken');
 
   const { data: cartData } = useGetCartDatilesQuery(token);
 
@@ -33,6 +36,8 @@ export default function ShopingCartpage() {
       }
     }
   }
+
+  console.log(cartdata)
 
   // const CartView = () =>{
   //   setShowcCart(true)
@@ -69,9 +74,11 @@ export default function ShopingCartpage() {
           {showCart && !showShopingForm && !showOrderComplited && (
             <ShopingCart onShopingCartView={ShopingCartView} cartdata={cartdata} />
           )}
+
           {showShopingForm && !showCart && !showOrderComplited && (
             <ShopingForm onOrderCompliteView={OrderCompliteView} cartdata={cartdata} />
           )}
+
           {showOrderComplited && !showCart && !showShopingForm && (
             <OrderComplited />
           )}

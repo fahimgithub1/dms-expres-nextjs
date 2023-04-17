@@ -5,16 +5,12 @@ import CartCalculation from "./cartCalculation";
 import CartTable from "./cartTable";
 import { useGetCartDatilesQuery } from "@/pages/xCallapi/customerSlices";
 import Lodding from "@/lib/lodding";
+import Cookies from "js-cookie";
 
 export default function ShopingCart(props) {
   const emptyCart = "/images/empty-cart.jpg";
 
-  const isBrowser = typeof window !== "undefined";
-  const [token, setToken] = useState(null);
-
-  useEffect(() => {
-    setToken(isBrowser ? localStorage.getItem("token") : null);
-  }, []);
+  const token = Cookies.get('authToken');
 
   const { data: cartData, lodding } = useGetCartDatilesQuery(token);
 
