@@ -1,23 +1,16 @@
 import ShopingListWrapper from "@/layouts/shopingListWrapper";
-import { useSelector } from "react-redux";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import WishTable from "./wishTable";
 import { useGetWishListQuery } from "@/pages/xCallapi/cardOrderSlice";
 import Lodding from "@/lib/lodding";
+import Cookies from "js-cookie";
 
 export default function Wishcomp() {
   const emptyCart = "/images/empty-cart.jpg";
 
-  const [token, setToken] = useState(null);
-
-  useEffect(() => {
-    const isBrowser = typeof window !== "undefined";
-    const tokenFromLocalStorage = isBrowser
-      ? localStorage.getItem("token")
-      : null;
-    setToken(tokenFromLocalStorage);
-  }, []);
+  const token = Cookies.get('authToken');
+  console.log(token)
 
   const { data: wishData, lodding, error } = useGetWishListQuery(token);
 

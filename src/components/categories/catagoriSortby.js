@@ -15,52 +15,58 @@ export default function CatagoriSortby(props) {
   });
 
   return (
-    <div className={classes.CtagorisFilter}>
-      <ul>
-        <li>
-          <button
-            onClick={() => {
-              shortOption = "A - Z";
-              dispatch(setShortMethod(shortOption));
-            }}
-          >
-            A - Z
-          </button>
-        </li>
+    <>
+      <div className={classes.CtagorisFilter}>
+        <ul>
+          <li>
+            <button
+              onClick={() => {
+                shortOption = "A - Z";
+                dispatch(setShortMethod(shortOption));
+              }}
+            >
+              A - Z
+            </button>
+          </li>
 
-        <li>
-          <button
-            onClick={() => {
-              shortOption = "Z - A";
-              dispatch(setShortMethod(shortOption));
-            }}
-          >
-            Z - A
-          </button>
-        </li>
+          <li>
+            <button
+              onClick={() => {
+                shortOption = "Z - A";
+                dispatch(setShortMethod(shortOption));
+              }}
+            >
+              Z - A
+            </button>
+          </li>
 
-        <li>
-          <button
-            onClick={() => {
-              shortOption = "Lowest";
-              dispatch(setShortMethod(shortOption));
-            }}
-          >
-            Lowest
-          </button>
-        </li>
+          <li>
+            <button
+              onClick={() => {
+                shortOption = "Lowest";
+                dispatch(setShortMethod(shortOption));
+              }}
+            >
+              Lowest
+            </button>
+          </li>
 
-        <li>
-          <button
-            onClick={() => {
-              shortOption = "Height";
-              dispatch(setShortMethod(shortOption));
-            }}
-          >
-            Height
-          </button>
-        </li>
-      </ul>
-    </div>
+          <li>
+            <button
+              onClick={() => {
+                shortOption = "Height";
+                dispatch(setShortMethod(shortOption));
+              }}
+            >
+              Height
+            </button>
+          </li>
+        </ul>
+        <div className={classes.priceFilter}>
+          {/* <p>Price: </p> */}
+          <PriceRangeSlider categori={props.categori} />
+        </div>
+      </div>
+    </>
   );
 }

@@ -15,7 +15,7 @@ export default function CatagoriProducts(props) {
       {
         categoriProduct = products.map((item) => (
           <div
-            className="DuleProduct Mobile20 col-md-4 col-sm-6 Mobile50"
+            className="DuleProduct col-6 Mobile20 col-md-4 col-sm-6"
             key={item.id}
           >
             <ProductCard
@@ -37,11 +37,11 @@ export default function CatagoriProducts(props) {
   }
 
   return (
-    <div className="tab-content tab-content-Cate">
+    <div className="mt-2 mt-md-4">
       <div className="row">
         {!lodding && categoriProduct}
         {lodding && <Lodding />}
-        {isItemAvilable && (
+        {!isItemAvilable && (
           <p className="text-center text-bold">No Item Available</p>
         )}
       </div>

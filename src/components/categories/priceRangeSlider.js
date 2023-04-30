@@ -34,6 +34,7 @@ function PriceRangeSlider(props) {
   let productParameters = {
     categorID : filterInfo.category_id
   };
+  
   let price = filterInfo.price;
   let quantity = 0;
   const { data: FilterData } = useGetFilterProductsQuery({

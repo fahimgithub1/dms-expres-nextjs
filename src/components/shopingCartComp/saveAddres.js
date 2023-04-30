@@ -2,22 +2,16 @@ import Lodding from "@/lib/lodding";
 import { useGetCustomerDetailsMutation } from "@/pages/xCallapi/authenticationApiSlices";
 import { useAddaddresSaveCardMutation } from "@/pages/xCallapi/cardOrderSlice";
 import { useGetAddressesQuery } from "@/pages/xCallapi/customerSlices";
-import React, { useEffect, useState } from "react";
+import Cookies from "js-cookie";
+import React, {useState } from "react";
 
 export default function SaveAddres(props) {
   const [customerData, setCustomerData] = useState("");
-  const [token, setToken] = useState(null);
-  const { data: addresses, isLoading, error } = useGetAddressesQuery(token);
   const [customer] = useGetCustomerDetailsMutation();
   const [saveAddressCard] = useAddaddresSaveCardMutation();
-  
-  useEffect(() => {
-    const isBrowser = typeof window !== "undefined";
-    const tokenFromLocalStorage = isBrowser
-      ? localStorage.getItem("token")
-      : null;
-    setToken(tokenFromLocalStorage);
-  }, []);
+
+  const token = Cookies.get('authToken');
+  const { data: addresses, isLoading, error } = useGetAddressesQuery(token);
 
   const selectAddress = (item) => {
     customer(token)
@@ -92,8 +86,8 @@ export default function SaveAddres(props) {
 
   return (
     <div className="row saveAddress">
-      {!isLoading && addresBook}
-      {isLoading && <Lodding />}
+      {!isLoading && !error && addresBook}
+      {isLoading && !error && <Lodding />}
     </div>
   );
 }

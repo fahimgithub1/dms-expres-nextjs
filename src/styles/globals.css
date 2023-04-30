@@ -652,8 +652,10 @@ input:hover {
     padding-bottom: 0rem !important;
 }
 
-.Mobile20{
-    width: 20%;
+@media screen and (min-width: 1024px) {
+    .Mobile20{
+        width: 20%;
+    }
 }
 
 .Catagori .Catagori2 {
@@ -756,7 +758,6 @@ input:hover {
     font-size: 14px;
 }
 
-
 /* filter part start*/
 
 @media screen and (min-width: 1100px) {
@@ -822,7 +823,6 @@ body {
 }
 
 /* for ovander start */
-
 .WishAChartHeos {
     margin-top: 156px;
     padding-top: 30px;
@@ -849,122 +849,12 @@ body {
     }
 }
 
-.banner.banner-inner {
-    background: var(--bgColor);
-    background: cover;
-    padding: 0;
-    position: relative;
-    overflow: hidden;
-    z-index: 2;
-    border-radius: 7px;
-    margin-bottom: 20px;
-}
-
-.banner.banner-inner::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url(/images/inner-banner-bg.png) center center no-repeat;
-    background-size: cover;
-    opacity: 0.5;
-    z-index: -1;
-}
-
-.banner.banner-inner .breadcrumb-txt {
-    padding: 43px 0;
-}
-
-.banner.banner-inner .breadcrumb-txt h1 {
-    font-size: 40px;
-    line-height: 100%;
-    font-weight: 700;
-    color: #222222;
-    margin-top: -5px;
-    margin-bottom: 24px;
-}
-
-.banner.banner-inner .breadcrumb-txt ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    gap: 15px;
-}
-
-.banner.banner-inner .breadcrumb-txt ul li {
-    font-family: "Rubik", sans-serif;
-    font-size: 20px;
-    line-height: 100%;
-    color: #606060;
-    margin-bottom: -1px;
-}
-
-.banner.banner-inner .breadcrumb-txt ul li a:hover {
-    color: var(--logoColor-2);
-}
-
-.banner.banner-inner .part-img {
-    height: 170px;
-    padding: 10px 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-}
-
-.banner.banner-inner .part-img img {
-    width: auto;
-    max-width: none;
-    max-height: 100%;
-}
-
-.perSstep {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.perSstep div {
-    background-color: #979797;
-    height: 6px;
-    position: relative;
-    border-radius: 7px;
-}
-
-.perSstep .chartActive,
-.perSstep .CartActive2,
-.perSstep .CartActive3 {
-    background-color: #c0663a;
-    animation-name: example;
-    animation-duration: 4s;
-}
-
 #orderCompletedTab {
     padding: 5rem 0;
 }
 
 .orderSucessColors {
     color: var(--logoColor-1);
-}
-
-section.CommonpaddingSection.tab-section.productPhonemargin.WidhPage {
-    padding-top: 0;
-}
-
-@keyframes example {
-    from {
-        background-color: #d8d8d8;
-    }
-
-    to {
-        background-color: var(--logoColor-2);
-    }
 }
 
 .perSstep div span {
@@ -986,7 +876,7 @@ section.CommonpaddingSection.tab-section.productPhonemargin.WidhPage {
     border-radius: 8px;
     line-height: 34px;
     padding: 2px 12px;
-    background: var(--navColor);
+    background: var(--logoColor-2);
     color: #ffffff;
     font-size: 15px;
     font-weight: 500;
@@ -994,6 +884,7 @@ section.CommonpaddingSection.tab-section.productPhonemargin.WidhPage {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     border: none;
+    width: 100%;
 }
 
 .fa-credit-card {
@@ -1157,7 +1048,6 @@ p {
     color: #ffffff;
     background-color: var(--logoColor-1);
 }
-
 /* Order Tracking End */
 
 @media screen and (max-width: 575px) {
@@ -1770,14 +1660,6 @@ p {
 .payment-method .payment-option .single-payment-card .panel-body .def-btn:focus {
     background: var(--logoColor-1);
     color: #ffffff;
-}
-
-.payment-method .palce-order {
-    width: 100%;
-}
-
-.payment-method .palce-order:hover {
-    background-color: var(--logoColor-1);
 }
 
 .tab-section .tab-contents .tab-next-btn {

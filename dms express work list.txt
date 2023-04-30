@@ -1,0 +1,71 @@
+.user profile
+.wish page
+.Error
+
+Navber(done)(11-04-23)
+======
+1) design
+2) catagoris
+3) searching
+4) add to cart, wish
+
+Home Page(11-04-23, 12-04-23)(done)
+=========
+1) heros(with api)
+2) 3 banner one page(design)
+3) Categories
+4) SELECTED PRODUCTS(design)
+5) Featured Products(no need)
+6) Daily Discover
+7) payments options
+8) footer(memeo cosmetics)
+9) blog(design)
+**) AutoPlay slider
+
+Single Producr Page(12-04-23)
+===================
+2) Right side Counting(done)
+   .) color and variant(API Need)
+3) Disciption & Technical Focus(done)
+
+Single Producr Page(17-4-2023)(done)
+===================
+1) left side images
+4) Related Products
+5) CIMALP, COMMITTED TO THE PLANET
+6) Reviews
+
+Product Page(17-4-2023)(done)
+============
+
+wish Page(30-4-2023)(done)
+=========
+
+profie Page
+===========
+
+All Product
+===========
+
+Card and order process Page
+===========================
+
+
+****************** API need ******************
+Home Page
+=========
+2) 3 banner one page(api need)
+3) SELECTED PRODUCTS(api need)
+5) Featured Products(api need)
+9) blog(api need)
+
+Product Page
+===============
+2) Right side Counting
+   .) color and variant(API Need)
+3) Technical Focus(API Need)
+6) CIMALP, COMMITTED TO THE PLANET(API Need)
+
+const token = Cookies.get('authToken');
+
+

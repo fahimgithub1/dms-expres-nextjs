@@ -3,10 +3,9 @@ import ShopingCart from "@/components/shopingCartComp/shopingCart";
 import ShopingForm from "@/components/shopingCartComp/shopingForm";
 import CartWrapper from "@/layouts/cartWrapper";
 import HeaderCom from "@/lib/header";
-import PagesHeros from "@/lib/pagesHeros";
 import Footer from "@/navAndFooter/footer";
 import Navber from "@/navAndFooter/navber";
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
 import { useGetCartDatilesQuery } from "../xCallapi/customerSlices";
 import Cookies from "js-cookie";
 
@@ -15,23 +14,14 @@ export default function ShopingCartpage() {
   const [showShopingForm, setShowShopingForm] = useState(false);
   const [showOrderComplited, setShowOrderComplited] = useState(false);
 
-  // const isBrowser = typeof window !== "undefined";
-  // const [token, setToken] = useState(null);
-
-  // useEffect(() => {
-  //   setToken(isBrowser ? localStorage.getItem("token") : null);
-  // }, []);
-
   const token = Cookies.get('authToken');
 
   const { data: cartData } = useGetCartDatilesQuery(token);
 
-  let cartLength = 0;
   let cartdata = "";
   if (cartData !== undefined && cartData !== null) {
     if (cartData.data !== null) {
       if (cartData.data.items.length > 0) {
-        cartLength = cartData.data.items_count;
         cartdata = cartData;
       }
     }
@@ -64,10 +54,10 @@ export default function ShopingCartpage() {
       <main>
         <Navber />
 
-        <section className="sectionMarginBot HerosSection MainBodyTop">
-          <div className="row">
+        <section className="sectionMarginBot HerosSection MainBodyTop pt-lg-2">
+          {/* <div className="row">
             <PagesHeros img='/shopping-cart.jpg' />
-          </div>
+          </div> */}
         </section>
 
         <CartWrapper>

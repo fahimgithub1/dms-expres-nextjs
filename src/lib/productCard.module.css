@@ -54,3 +54,13 @@
     margin-top: -20px;
     margin-bottom: 10px;
 }
+
+@media screen and (max-width: 575px) {
+    .productCard .imageBox {
+        height: 160px;
+    }
+
+    .productCard img {
+        height: 160px;
+    }
+}

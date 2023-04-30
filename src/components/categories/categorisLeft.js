@@ -4,20 +4,21 @@ import PriceRangeSlider from "./priceRangeSlider";
 
 export default function CategorisLeft(props) {
   const categori= props.categori;
+  console.log
 
   return (
     <div className="col-xl-3 col-lg-3 col-md-0 col-sm-0 Catagori">
       <div className="Catagori2">
-        <h5>Filter Products By</h5>
+        {/* <h5>Filter Products By</h5>
         
         <div className="Catagori3">
           <span className="TaiterSpan">CATEGORY</span>
           <a href="#" className="categoriMainName">{categori.name}</a>
-        </div>
+        </div> */}
 
         <PriceRangeSlider categori={categori}  />
 
-        <div className="Catagori3">
+        {/* <div className="Catagori3">
           <span className="TaiterSpan">PRODUCT TYPE</span>
           <a href="#">Unassigned (1)</a>
           <a href="#">Hair Brushs (1)</a>
@@ -62,7 +63,7 @@ export default function CategorisLeft(props) {
 
         <div className="Catagori3">
           <button>Clean All</button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

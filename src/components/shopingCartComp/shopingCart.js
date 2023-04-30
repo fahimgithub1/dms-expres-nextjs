@@ -1,6 +1,6 @@
 import ShopingListWrapper from "@/layouts/shopingListWrapper";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import CartCalculation from "./cartCalculation";
 import CartTable from "./cartTable";
 import { useGetCartDatilesQuery } from "@/pages/xCallapi/customerSlices";
@@ -11,7 +11,6 @@ export default function ShopingCart(props) {
   const emptyCart = "/images/empty-cart.jpg";
 
   const token = Cookies.get('authToken');
-
   const { data: cartData, lodding } = useGetCartDatilesQuery(token);
 
   let cartLength = 0;
