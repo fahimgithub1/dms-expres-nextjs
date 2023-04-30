@@ -38,6 +38,9 @@ Single Producr Page(17-4-2023)(done)
 Product Page(17-4-2023)(done)
 ============
 
+Card and(17-4-2023)(done)
+========
+
 wish Page(30-4-2023)(done)
 =========
 
@@ -47,8 +50,8 @@ profie Page
 All Product
 ===========
 
-Card and order process Page
-===========================
+order process Page
+==================
 
 
 ****************** API need ******************
