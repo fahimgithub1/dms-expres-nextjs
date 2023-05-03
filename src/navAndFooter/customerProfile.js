@@ -13,11 +13,12 @@ export default function CustomerProfile(props) {
 
   const router = useRouter();
 
-  const token = props.token;
+  // const token = props.token;
+  const token = Cookies.get("authToken");
 
   const { data: logoutResponse } = useGetLogoutQuery(token);
 
-  useEffect(() => {
+  useEffect(() => {   
     customer(token)
       .unwrap()
       .then((response) => {

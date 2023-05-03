@@ -42,9 +42,8 @@ export default function MidNav() {
     );
   }
 
-  // token
-  let token = null;
-  token = Cookies.get("authToken");
+  // let token = null
+  const token = !Cookies.get("authToken") ? null : Cookies.get("authToken");
 
   // wish itme
   const { data: wishtItems, lodding, error } = useGetWishListQuery(token);
@@ -123,7 +122,7 @@ export default function MidNav() {
                 </div>
               </Link>
             </div>
-            
+
             {token === null && (
               <div className="IconDiv">
                 <i className="fa-regular fa-user"></i>
@@ -138,7 +137,7 @@ export default function MidNav() {
               </div>
             )}
 
-            {token !== null && <CustomerProfile token={token} />}
+            {token !== null && <CustomerProfile />}
           </div>
         </div>
       </div>

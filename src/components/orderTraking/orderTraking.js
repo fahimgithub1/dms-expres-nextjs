@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import UserConfirmation from './userConfirmation'
+import OrderInfo from './orderInfo';
 
 export default function OrderTraking() {
     const [isShowTraking,  setShowTraking] = useState(false);
@@ -15,7 +16,7 @@ export default function OrderTraking() {
   return (
     <>
         {!isShowTraking && <UserConfirmation onTtoggle={toggle} />}
-        {isShowTraking && <></> }
+        {isShowTraking && <OrderInfo /> }
     </>
   )
 }

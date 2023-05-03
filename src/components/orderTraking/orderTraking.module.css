@@ -1,4 +1,4 @@
-.trackingForm{
+.trackingForm {
     max-width: 470px;
     padding: 30px 20px;
     border-radius: 10px;
@@ -6,14 +6,14 @@
     background-color: var(--bgColor);
 }
 
-.trackingForm h4{
+.trackingForm h4 {
     font-size: 28px;
     font-weight: 700;
     text-transform: capitalize;
     color: var(--logoColor-1);
 }
 
-.trackingForm label{
+.trackingForm label {
     margin-bottom: 10px;
     font-size: 21px;
     font-weight: 600;
@@ -21,10 +21,162 @@
     text-align: left !important;
 }
 
-.trackingForm input{
+.trackingForm input {
     padding: 5px 12px;
     width: 100%;
     margin-bottom: 15px;
     border: 1px solid var(--logoColor-1);
 }
 
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
+.cardBody {
+    padding: 15px 20px;
+}
+
+.card {
+    max-width: 1100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgb(0 0 0 / 26%);
+    border-radius: 0.1rem;
+    margin: auto;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.cardHeader:first-child {
+    border-radius: calc(0.37rem - 1px) calc(0.37rem - 1px) 0 0
+}
+
+.cardHeader {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+.track {
+    position: relative;
+    background-color: #ddd;
+    height: 7px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 60px;
+    margin-top: 50px
+}
+
+.track .step {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    width: 25%;
+    margin-top: -18px;
+    text-align: center;
+    position: relative
+}
+
+.track .step.active:before {
+    background: var(--logoColor-2);
+}
+
+.track .step::before {
+    height: 7px;
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    top: 18px
+}
+
+.track .step.active .icon {
+    background-color: var(--logoColor-1);
+    /* border-color: var(--logoColor-2); */
+    color: #fff
+}
+
+.track .icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    border-radius: 100%;
+    background: #ddd
+}
+
+.track .step.active .text {
+    font-weight: 400;
+    color: #000
+}
+
+.track .text {
+    display: block;
+    margin-top: 7px
+}
+
+.itemside {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%
+}
+
+.itemside .aside {
+    position: relative;
+    -ms-flex-negative: 0;
+    flex-shrink: 0
+}
+
+.img-sm {
+    width: 80px;
+    height: 80px;
+    padding: 7px
+}
+
+.itemside .info {
+    padding-left: 15px;
+    padding-right: 7px
+}
+
+.itemside .title {
+    display: block;
+    margin-bottom: 5px;
+    color: #212529
+}
+
+/* p {
+    margin-top: 0;
+    margin-bottom: 1rem
+} */
+
+.btnWarning {
+    color: #ffffff;
+    background-color: var(--logoColor-1);
+    border-radius: 7px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.btnWarning:hover {
+    color: #ffffff;
+    background: var(--logoColor-2);
+}
+
+@media screen and (max-width: 575px) {
+    .track {
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .MainBodyTop {
+        margin-top: 134px !important;
+    }
+}

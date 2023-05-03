@@ -5,15 +5,15 @@ import Footer from "@/navAndFooter/footer";
 import Navber from "@/navAndFooter/navber";
 import React from "react";
 
-export default function RewardsAndGift() {
+export default function BlogList() {
   return (
     <>
-      <HeaderCom title="Rewards And Gift" />
+      <HeaderCom title="Blogs" />
 
       <main>
         <Navber />
 
-        <section className="MainBodyTop HerosSection sectionMarginBot">
+        <section className="MainBodyTop HerosSection sectionMarginBot pt-md-3 pt-lg-4">
           <div className="container mt-lg-2">
             <div className="row">
               <BlogLeftSide />
