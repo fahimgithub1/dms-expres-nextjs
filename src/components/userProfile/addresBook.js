@@ -1,21 +1,16 @@
 import Lodding from "@/lib/lodding";
 import { useGetAddressesQuery } from "@/pages/xCallapi/customerSlices";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import NewAddress from "./newAddress";
+import Cookies from "js-cookie";
 
 export default function AddresBook() {
   const [showAddressForm, setShowAddressForm] = useState(false);
 
-  const [token, setToken] = useState(null);
-  const { data: addresses, isLoading, error } = useGetAddressesQuery(token);
+  const token = Cookies.get("authToken");
 
-  useEffect(() => {
-    const isBrowser = typeof window !== "undefined";
-    const tokenFromLocalStorage = isBrowser
-      ? localStorage.getItem("token")
-      : null;
-    setToken(tokenFromLocalStorage);
-  }, []);
+  const { data: addresses, isLoading, error } = useGetAddressesQuery(token);
+  console.log(addresses)
 
   let addresBook = "";
   if (addresses !== undefined) {
@@ -64,9 +59,17 @@ export default function AddresBook() {
     >
       <div className="AddressAddbtn">
         <h5>Address Book</h5>
-        <button id="AddAdressBtnO" onClick={FromHandler}>
-          <i className="fa-solid fa-plus"></i> Add New Address
-        </button>
+        {!showAddressForm && (
+          <button id="AddAdressBtnO" onClick={FromHandler}>
+            <i className="fa-solid fa-plus"></i> Add New Address
+          </button>
+        )}
+
+        {showAddressForm && (
+          <button id="AddAdressBtnO" onClick={FromHandler}>
+            <i className="fa-solid fa-xmark" /> Cenacle
+          </button>
+        )}
       </div>
 
       {showAddressForm && <NewAddress onFromClose={FromClose} />}
@@ -79,13 +82,14 @@ export default function AddresBook() {
             {isLoading && <Lodding />}
             {error && <div>{error.message}</div>}
             {addresBook}
-            {!isLoading && (addresBook === undefined ||
-              addresBook.length === 0 ||
-              addresBook === null) && 
-              <div className="text-center NoDataPound">
-                <img src="/no-data1-found.png" />
-              </div>
-              }
+            {!isLoading &&
+              (addresBook === undefined ||
+                addresBook.length === 0 ||
+                addresBook === null) && (
+                <div className="text-center NoDataPound">
+                  <img src="/no-data1-found.png" />
+                </div>
+              )}
           </div>
         </div>
       )}

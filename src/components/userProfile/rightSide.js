@@ -25,7 +25,7 @@ export default function RightSide() {
       <AddresBook/>
 
       {/* <!-- EDIT ACCOUNT INFORMATION --> */}
-      <AccountInfo />
+      {/* <AccountInfo /> */}
 
       {/* <!-- Phayment Mathod--> */}
       <PaymentMethod />

@@ -10,7 +10,6 @@ export default function Wishcomp() {
   const emptyCart = "/images/empty-cart.jpg";
 
   const token = Cookies.get('authToken');
-  console.log(token)
 
   const { data: wishData, lodding, error } = useGetWishListQuery(token);
 

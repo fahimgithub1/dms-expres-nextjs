@@ -16,7 +16,7 @@ function UserProfile() {
       <main>
         <Navber />
 
-        <SectionWrapper sectionClass="MainBodyTop HerosSection">
+        <SectionWrapper sectionClass="MainBodyTop HerosSection pt-3 pt-md-4">
           <div className="row">
             <LeftMenu />
             <RightSide />

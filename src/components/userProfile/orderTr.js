@@ -8,40 +8,39 @@ export default function OrderTr(props) {
       </div>
 
       <table className="table table-borderless Oderable">
-        <tr>
-          <td className="col-1">
-            <div className="product-img">
-              <img
-                src={props.img}
-                alt="Image"
-              />
-            </div>
-          </td>
-
-          <td>
-            <a href="shop-details.html" className="product-name">
-              {props.name}
-            </a>
-          </td>
-
-          <td>
-            <span className="price-txt">
-              Tk <span className="main-price">{props.price}</span>
-            </span>
-          </td>
-
-          <td>
-            <div className="product-count cart-product-count">
-              <div className="quantity rapper-quantity orederQuantity">
-                <span>Qty:</span> {props.quantity}
+        <tbody>
+          <tr>
+            <td className="col-1">
+              <div className="product-img">
+                <img src={props.img} alt="Image" />
               </div>
-            </div>
-          </td>
+            </td>
 
-          <td>
-            <span className="price-txt">{props.status}</span>
-          </td>
-        </tr>
+            <td>
+              <a href="shop-details.html" className="product-name">
+                {props.name}
+              </a>
+            </td>
+
+            <td>
+              <span className="price-txt">
+                Tk <span className="main-price">{props.price}</span>
+              </span>
+            </td>
+
+            <td>
+              <div className="product-count cart-product-count">
+                <div className="quantity rapper-quantity orederQuantity">
+                  <span>Qty:</span> {props.quantity}
+                </div>
+              </div>
+            </td>
+
+            <td>
+              <span className="price-txt">{props.status}</span>
+            </td>
+          </tr>
+        </tbody>
       </table>
     </div>
   );

@@ -1,5 +1,10 @@
 .user profile
 .wish page
+.blog page
+.single blog page
+.order Traking page
+.shearch page
+.All Product page
 .Error
 
 Navber(done)(11-04-23)
@@ -41,13 +46,28 @@ Product Page(17-4-2023)(done)
 Card and(17-4-2023)(done)
 ========
 
-wish Page(30-4-2023)(done)
+wish Page(30-4-2023)(done)(next day css)
 =========
 
-profie Page
+profie Page(next day)
 ===========
 
-All Product
+All Product(next day)
+===========
+
+Blog(2nd next day)
+====
+
+Bloge Single(2nd next day)
+============
+
+About Us(2nd next day)
+========
+
+Order Taraking(3rd next day)
+==============
+
+other pages(3nd next day)
 ===========
 
 order process Page
@@ -63,7 +83,7 @@ Home Page
 9) blog(api need)
 
 Product Page
-===============
+============
 2) Right side Counting
    .) color and variant(API Need)
 3) Technical Focus(API Need)

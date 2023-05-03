@@ -104,7 +104,6 @@ export default function MidNav() {
           <div className="SelectedIocn col-3">
             <div className="IconDiv NavCart Chartnonem">
               <i className="fa-solid fa-cart-shopping"></i>
-
               <div>
                 <p className="Count">{cartLength}</p>
                 <Link href="/shopingCart">
@@ -125,7 +124,7 @@ export default function MidNav() {
               </Link>
             </div>
             
-            {!token && (
+            {token === null && (
               <div className="IconDiv">
                 <i className="fa-regular fa-user"></i>
                 <div>
@@ -139,19 +138,7 @@ export default function MidNav() {
               </div>
             )}
 
-            {token && <CustomerProfile token={token} />}
-
-            {/* <div className="IconDiv">
-              <i className="fa-regular fa-user"></i>
-              <div>
-                <Link href="/login">
-                  <p>Login</p>
-                </Link>
-                <Link href="/login">
-                  <p>Register</p>
-                </Link>
-              </div>
-            </div> */}
+            {token !== null && <CustomerProfile token={token} />}
           </div>
         </div>
       </div>

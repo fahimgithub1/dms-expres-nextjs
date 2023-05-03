@@ -1,0 +1,30 @@
+.trackingForm{
+    max-width: 470px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: var(--bgColor);
+}
+
+.trackingForm h4{
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--logoColor-1);
+}
+
+.trackingForm label{
+    margin-bottom: 10px;
+    font-size: 21px;
+    font-weight: 600;
+    width: 100%;
+    text-align: left !important;
+}
+
+.trackingForm input{
+    padding: 5px 12px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid var(--logoColor-1);
+}
+

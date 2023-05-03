@@ -68,7 +68,6 @@ export default function Orders() {
                       price={item.price}
             />
         ))}
-        
       </div>
     </div>
   );

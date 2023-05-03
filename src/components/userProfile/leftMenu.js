@@ -61,7 +61,7 @@ export default function LeftMenu() {
         </button>
 
         {/* <!-- 66666666666 --> */}
-        <button
+        {/* <button
           className="nav-link text-white mb-2"
           id="nav-Account-Information"
           data-bs-toggle="tab"
@@ -72,7 +72,7 @@ export default function LeftMenu() {
           aria-selected="false"
         >
           Account Information
-        </button>
+        </button> */}
 
         {/* <!-- /777777777 --> */}
         <button

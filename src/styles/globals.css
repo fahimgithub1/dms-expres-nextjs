@@ -677,101 +677,6 @@ input:hover {
     font-weight: 600;
 }
 
-.Catagori3 {
-    padding: 20px;
-    font-size: 14PX;
-}
-
-.Catagori3 button {
-    background-color: var(--navColor);
-    width: 100%;
-    padding: 6px 20px;
-    font-size: 17px;
-    border-radius: 11px;
-    font-weight: 600;
-}
-
-.Catagori3:not(:last-child) {
-    border-bottom: 1px solid rgb(175, 175, 175);
-}
-
-.Catagori3 a {
-    padding: 5px 0px;
-    color: rgb(71, 71, 71);
-    margin-bottom: 0;
-    display: block;
-}
-
-.Catagori3 a:hover {
-    color: var(--logoColor-2);
-}
-
-.priceLabel {
-    background-color: var(--navColor);
-    height: 12px;
-    border-radius: 7px;
-    position: relative;
-    margin-top: .7rem;
-    border: 1px solid rgb(107, 107, 107);
-}
-
-.pricelavel1,
-.pricelavel2 {
-    height: 18px;
-    width: 18px;
-    border-radius: 50%;
-    background-color: white;
-    border: 3px solid rgb(46, 45, 45);
-    position: absolute;
-    cursor: pointer;
-    top: -3.5px;
-    box-shadow: 0 0 0 1px rgb(129, 129, 129);
-}
-
-.pricelavel1 {
-    left: 0;
-}
-
-.pricelavel2 {
-    right: 0%;
-}
-
-.priceInput {
-    margin-top: .7rem;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.priceInput input {
-    border: 1px solid #d8d8d8;
-    color: #211e1f;
-    padding-left: 2px;
-    padding-right: 2px;
-    text-align: center;
-    width: 50px;
-    float: none;
-    height: 36px;
-    max-width: 900px;
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    font-size: 14px;
-}
-
-/* filter part start*/
-
-@media screen and (min-width: 1100px) {
-    .CatagorisPage {
-        margin-bottom: 0;
-        padding-bottom: 0;
-
-    }
-
-    .CatagorisPage .tab-content {
-        margin-bottom: 0 !important;
-    }
-}
-
 @media screen and (max-width: 991px) {
     .Catagori {
         display: none;
@@ -789,7 +694,6 @@ input:hover {
         height: 150px;
     }
 }
-
 /* allporoduct css file end */
 
 /* chart css file start */
@@ -902,7 +806,6 @@ body {
 .fa-money-bill-1-wave {
     color: #509705;
 }
-
 /* Order Tracking Start */
 .card {
     position: relative;
@@ -1845,66 +1748,6 @@ p {
     line-height: 20px;
 }
 
-.tab-section .tab-contents .payment-method .total-clone {
-    padding: 20px;
-}
-
-.tab-section .tab-contents .payment-method .total-clone ul {
-    margin-top: -2px;
-}
-
-.tab-section .tab-contents .payment-method .total-clone ul li {
-    font-size: 14px;
-    margin-bottom: 12px;
-}
-
-.tab-section .tab-contents .payment-method .total-clone ul li:nth-child(2) {
-    margin-bottom: 18px;
-}
-
-.tab-section .tab-contents .payment-method .total-clone ul li.total-price-wrap {
-    padding-top: 18px;
-    margin-bottom: -1px;
-}
-
-.tab-section .tab-contents .payment-method .payment-option .single-payment-card .panel-header {
-    padding: 10px 15px;
-}
-
-.tab-section .tab-contents .payment-method .payment-option .single-payment-card .panel-header .left-wrap .form-check {
-    margin-top: 3px;
-}
-
-.tab-section .tab-contents .payment-method .payment-option .single-payment-card .panel-header .left-wrap .type {
-    font-size: 14px;
-}
-
-.tab-section .tab-contents .payment-method .payment-option .single-payment-card .panel-header .icon {
-    width: 30px;
-}
-
-.tab-section .tab-contents .payment-method .payment-option .single-payment-card .panel-header .icon i {
-    font-size: 30px !important;
-}
-
-.tab-section .tab-contents .payment-method .payment-option .single-payment-card .panel-body {
-    padding: 15px;
-}
-
-.tab-section .tab-contents .payment-method .payment-option .single-payment-card .panel-body label {
-    font-size: 12px;
-}
-
-.tab-section .tab-contents .payment-method .payment-option .single-payment-card .panel-body input {
-    height: 35px;
-    padding: 0 15px;
-}
-
-.tab-section .tab-contents .payment-method .payment-option .single-payment-card .panel-body .def-btn {
-    height: 35px;
-    line-height: 35px;
-}
-
 .checkmark {
     width: 80px;
     height: 80px;
@@ -1927,15 +1770,6 @@ p {
 .WidhPage .tab-contents .btn-box {
     max-width: 1100px;
     margin: auto;
-}
-
-.banner.banner-inner {
-    background: cover;
-    padding: 0;
-    position: relative;
-    overflow: hidden;
-    z-index: 2;
-    border-radius: 7px;
 }
 
 @media screen and (min-width: 1100px) {
@@ -1974,7 +1808,6 @@ p {
     }
 }
 
-
 @media screen and (min-width: 767px) {
     .CartPage {
         padding-top: 1rem !important;
@@ -1997,7 +1830,6 @@ p {
         justify-content: center;
     }
 }
-
 
 @media screen and (min-width: 1024px) {
     .CartPage {
@@ -5634,7 +5466,7 @@ button.FaBtn.RegistBtn.LoginBtn {
 
 .UserMenu .active {
     border-left: none;
-    color: var(--navColor) !important;
+    color: var(--logoColor-2) !important;
 }
 
 .MenuDaitels.tab-content {
@@ -5785,7 +5617,7 @@ button.FaBtn.RegistBtn.LoginBtn {
 }
 
 .AddressAddbtn button {
-    background-color: var(--navColor);
+    background-color: var(--logoColor-1);
     padding: 5px 10px;
     border-radius: 7px;
     color: white;
@@ -5931,7 +5763,7 @@ button.FaBtn.RegistBtn.LoginBtn {
 .collectedAddress {
     font-size: 13px;
     padding: 5px;
-    margin-top: 2.2rem;
+    margin-top: 1.2rem;
 }
 
 .collectedAddress .BoxADD {

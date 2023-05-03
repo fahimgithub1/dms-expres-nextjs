@@ -8,6 +8,7 @@ import Navber from "@/navAndFooter/navber";
 import React, {useState } from "react";
 import { useGetCartDatilesQuery } from "../xCallapi/customerSlices";
 import Cookies from "js-cookie";
+import PagesHeros from "@/lib/pagesHeros";
 
 export default function ShopingCartpage() {
   const [showCart, setShowcCart] = useState(true);
@@ -26,14 +27,6 @@ export default function ShopingCartpage() {
       }
     }
   }
-
-  console.log(cartdata)
-
-  // const CartView = () =>{
-  //   setShowcCart(true)
-  //   setShowShopingForm(false)
-  //   setShowOrderComplited(false)
-  // }
 
   const ShopingCartView = () => {
     setShowcCart(false);
@@ -55,9 +48,9 @@ export default function ShopingCartpage() {
         <Navber />
 
         <section className="sectionMarginBot HerosSection MainBodyTop pt-lg-2">
-          {/* <div className="row">
+          <div className="row">
             <PagesHeros img='/shopping-cart.jpg' />
-          </div> */}
+          </div>
         </section>
 
         <CartWrapper>

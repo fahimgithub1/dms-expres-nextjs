@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 export default function CartSummaryTh(props) {
   const itemId = props.id;
   
-  const [timer, setTimer] = useState(null);
+  // const [timer, setTimer] = useState(null);
   const [token, setToken] = useState(null);
 
   useEffect(() => {

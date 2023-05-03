@@ -3,16 +3,15 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import classes from "./caragoris.module.css";
 import PriceRangeSlider from "./priceRangeSlider";
-// import CategoriFilerPrice from "./categoriFilerPrice";
 
 export default function CatagoriSortby(props) {
   let shortOption = "";
 
   const dispatch = useDispatch();
 
-  const totalItems = useSelector((state) => {
-    return state.PriceProducts.quantity;
-  });
+  // const totalItems = useSelector((state) => {
+  //   return state.PriceProducts.quantity;
+  // });
 
   return (
     <>
@@ -63,7 +62,6 @@ export default function CatagoriSortby(props) {
           </li>
         </ul>
         <div className={classes.priceFilter}>
-          {/* <p>Price: </p> */}
           <PriceRangeSlider categori={props.categori} />
         </div>
       </div>

@@ -37,10 +37,9 @@ export default function MainBody(props) {
     }
   }
 
-
   return (
     <div className="pt-lg-4 pt-md-3">
-      <div className="AllProduct">
+      <div>
         <CatagoriSortby categori={props.categori}  />
         <CatagoriProducts isItemAvilable={isItemAvilable} lodding={lodding} />
       </div>
