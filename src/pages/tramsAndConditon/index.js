@@ -1,3 +1,4 @@
+import BlogRightSide from "@/components/blogs/blogRightSide";
 import HeaderCom from "@/lib/header";
 import Footer from "@/navAndFooter/footer";
 import Navber from "@/navAndFooter/navber";
@@ -34,16 +35,20 @@ export default function TramsAndConditon() {
       <main>
         <Navber />
 
-        <section className="MainBodyTop HerosSection sectionMarginBot">
+        <section className="MainBodyTop HerosSection sectionMarginBot pt-lg-3">
           <div className="container mt-lg-2">
-            <div className="col-12 AboutUsLeft TermsAndCond">
-              {TramsAndConditons.map((item) => (
-                <div className="AboutUsPerDiv AboutUsPerDiv2" key={item.id}>
-                  <h5>{item.title}</h5>
+            <div className="row">
+              <div className="col-md-8 col-lg-9 AboutUsLeft TermsAndCond">
+                {TramsAndConditons.map((item) => (
+                  <div className="AboutUsPerDiv" key={item.id}>
+                    <h5>{item.title}</h5>
 
-                  <p>{item.text}</p>
-                </div>
-              ))}
+                    <p>{item.text}</p>
+                  </div>
+                ))}
+              </div>
+
+              <BlogRightSide />
             </div>
           </div>
         </section>

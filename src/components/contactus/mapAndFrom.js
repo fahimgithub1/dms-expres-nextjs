@@ -1,16 +1,18 @@
-import BgWrapper from "@/layouts/bgWrapper";
 import React from "react";
-import ContactForm from "./contactForm";
 import MapBox from "./mapBox";
+import ContactInfo from "./contactInfo";
 
 export default function MapAndFrom() {
   return (
-    <BgWrapper sectionClass="MainBodyTop HerosSection sectionMarginBot">
-      <div className="row ContactUSDiv">
-        <h3 className="text-center">Contact</h3>
-        <MapBox />
-        <ContactForm />
+    <div className="MainBodyTop HerosSection sectionMarginBot">
+      <div className="container ContactUSDiv">
+        <h1 className="text-center">Find Us At Plant</h1>
+        <h3 className="text-center">DMS Express</h3>
+        <div className="row align-items-center">
+          <MapBox />
+          <ContactInfo />
+        </div>
       </div>
-    </BgWrapper>
+    </div>
   );
 }

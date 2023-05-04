@@ -1,65 +1,41 @@
-import BgWrapper from "@/layouts/bgWrapper";
 import React from "react";
 
 export default function ContactInfo() {
   return (
-    <BgWrapper bgclassName="ContactAdreSec">
-      <div className="row">
-        <div className="col-lg-3 col-md-4 m-auto col-sm-6 PerContactD">
-          <div className="AddressDiv">
-            <div className="AddressI">
-              <i className="fa-solid fa-location-dot"></i>
-            </div>
-
-            <div>
-              <p>Address</p>
-              <span>25-27 Rd No 1, Dhaka 1230</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="col-lg-3 col-md-4 m-auto col-sm-6 PerContactD">
-          <div className="AddressDiv">
-            <div className="AddressI">
-              <i className="fa-solid fa-phone"></i>
-            </div>
-
-            <div>
-              <p>Phone</p>
-              <span>
-                +017 45098343 <br />
-                +017 45098343
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div className="col-lg-3 col-md-4 m-auto col-sm-6 PerContactD">
-          <div className="AddressDiv">
-            <div className="AddressI">
-              <i className="fa-solid fa-envelope"></i>
-            </div>
-
-            <div>
-              <p>Email</p>
-              <span>Zaytuna@gmail.com</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="col-lg-3 col-md-4 m-auto col-sm-6 PerContactD">
-          <div className="AddressDiv">
-            <div className="AddressI">
-              <i className="fa-solid fa-location-dot"></i>
-            </div>
-
-            <div>
-              <p>Openint Hour</p>
-              <span>10:00 AM - 8:00 PM</span>
-            </div>
-          </div>
-        </div>
+    <div className="col-lg-6 col-md-6">
+      <div className="contactList">
+        <ul>
+          <li>
+            <i className="fa-solid fa-house"></i>
+            Flat # 6/A, Level 7, House 10, Rd# 02, Sec# 06, House Building
+            Uttara Dhaka-1230.
+          </li>
+          <li>
+            <i className="fa-solid fa-phone"></i>
+            Phone: +8809669-260655, +880174-326-0655
+          </li>
+          <li>
+            <i className="fa-solid fa-envelope"></i>
+            admin@digitalmarketingbd.com
+          </li>
+          <li>
+            <i className="fa-brands fa-skype"></i>
+            dmsolution2015
+          </li>
+          <li>
+            <i className="fa-brands fa-whatsapp"></i>
+            +880174-326-0655
+          </li>
+          <li>
+            <i class="fa-solid fa-globe"></i>
+            +880174-326-0655
+          </li>
+          <li>
+            <i className="fa-solid fa-house contact_us_icon"></i>
+            +8809669-260655, +880174-326-0655
+          </li>
+        </ul>
       </div>
-    </BgWrapper>
+    </div>
   );
 }

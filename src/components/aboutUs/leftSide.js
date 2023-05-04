@@ -2,8 +2,10 @@ import React from "react";
 
 export default function LeftSide() {
   return (
-    <div className="col-lg-8 AboutUsLeft">
-      <div className="AboutUsPerDiv">
+    <div className="col-md-9 AboutUsLeft">
+      <div className="AboutUsPerDiv text-start">
+        <img src="./logo.png" />
+
         <h5>About Us</h5>
 
         <p>
@@ -26,6 +28,10 @@ export default function LeftSide() {
           voluptates, voluptatibus obcaecati, deserunt facilis explicabo? Dolor
           ex fugiat perferendis eligendi nostrum!
         </p>
+      </div>
+
+      <div className="AboutUsPerDiv text-start">
+        <h5>About Us</h5>
 
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium

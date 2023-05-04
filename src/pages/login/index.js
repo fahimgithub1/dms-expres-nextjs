@@ -31,7 +31,7 @@ export default function RewardsAndGift() {
 
   return (
     <>
-      <HeaderCom title="Rewards And Gift" />
+      <HeaderCom title="Login" />
 
       <main>
         <Navber />

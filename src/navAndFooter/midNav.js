@@ -42,7 +42,7 @@ export default function MidNav() {
     );
   }
 
-  // let token = null
+  // const token = 'toke';
   const token = !Cookies.get("authToken") ? null : Cookies.get("authToken");
 
   // wish itme
@@ -123,7 +123,7 @@ export default function MidNav() {
               </Link>
             </div>
 
-            {token === null && (
+            {(token === null) && (
               <div className="IconDiv">
                 <i className="fa-regular fa-user"></i>
                 <div>
@@ -137,7 +137,7 @@ export default function MidNav() {
               </div>
             )}
 
-            {token !== null && <CustomerProfile />}
+            {(token !== null) && <CustomerProfile />}
           </div>
         </div>
       </div>

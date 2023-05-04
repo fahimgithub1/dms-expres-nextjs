@@ -14,7 +14,7 @@ export default function ContactUS() {
       <main>
         <Navber />
         <MapAndFrom />  
-        <ContactInfo />        
+        {/* <ContactInfo />         */}
         <Footer />
       </main>
     </>

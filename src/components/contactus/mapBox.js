@@ -2,7 +2,7 @@ import React from "react";
 
 export default function MapBox() {
   return (
-    <div className="col-lg-6 col-md-6">
+    <div className="col-lg-6 col-md-6 mb-3 mb-md-0">
       <div className="MapDiv">
         <div className="mapouter">
           <div className="gmap_canvas">

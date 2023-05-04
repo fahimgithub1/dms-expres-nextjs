@@ -3,117 +3,27 @@ import classes from "./footer.module.css";
 
 export default function Footer() {
   return (
-    // <footer classNameName="bgPadding mb-5 mb-lg-0">
-    //   <div classNameName="container">
-    //     <div classNameName="row">
-    //       <div classNameName="col-lg-4 col-md-4">
-    //         <h4>Customer Care</h4>
-
-    //         <ul>
-    //           <li>
-    //             <Link href="/tramsAndConditon">How to Shop</Link>
-    //           </li>
-    //           <li>
-    //             <Link href="/tramsAndConditon">Returns and Refunds</Link>
-    //           </li>
-    //           <li>
-    //             <Link href="/contactus">Contact Us</Link>
-    //           </li>
-    //         </ul>
-    //       </div>
-
-    //       <div classNameName="col-lg-4 col-md-4">
-    //         <h4>Ovendar</h4>
-
-    //         <ul>
-    //           <li>
-    //             <Link href="/aboutUs">About Ovenar</Link>
-    //           </li>
-    //           <li>
-    //             <Link href="/tramsAndConditon">Terms & Conditions</Link>
-    //           </li>
-    //           <li>
-    //             <Link href="/privacyPolicy">Privacy Policy</Link>
-    //           </li>
-    //           <li>
-    //             <Link href="/blogs">Ovendar Blog</Link>
-    //           </li>
-    //         </ul>
-    //       </div>
-
-    //       <div classNameName="col-lg-4 col-md-4">
-    //         <h4>Follow Us</h4>
-
-    //         <div classNameName="ContactDiv">
-    //           <div classNameName="SocialIocn">
-    //             <ul>
-    //               <li>
-    //                 <Link href="#" classNameName="facbookNav">
-    //                   <i classNameName="fa-brands fa-facebook-f"></i>
-    //                 </Link>
-    //               </li>
-    //               <li>
-    //                 <Link href="#" classNameName="tuitterNav">
-    //                   <i classNameName="fa-brands fa-twitter"></i>
-    //                 </Link>
-    //               </li>
-    //               <li>
-    //                 <Link href="#" classNameName="Youtube">
-    //                   <i classNameName="fa-brands fa-youtube"></i>
-    //                 </Link>
-    //               </li>
-    //               <li>
-    //                 <Link href="#" classNameName="Youtube">
-    //                   <i classNameName="fa-brands fa-instagram"></i>
-    //                 </Link>
-    //               </li>
-    //               <li>
-    //                 <Link href="#" classNameName="facbookNav">
-    //                   <i classNameName="fa-brands fa-linkedin-in"></i>
-    //                 </Link>
-    //               </li>
-    //             </ul>
-    //           </div>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-
-    //   <div>
-    //     <img src="/images/payment.png" alt="Ovender Logo" />
-    //   </div>
-
-    //   <div classNameName="copWrite">
-    //     <p classNameName="text-center">
-    //       ©2022 Ovendar. All Rights Reserved. | Design & Development By:-
-    //       Digital Marketing Solution (Pvt.) Ltd.
-    //     </p>
-    //   </div>
-    // </footer>
     <footer className={`${classes.footer}`}>
       <div className={`container ${classes.BgPadding}`}>
         <div className="row">
           <div className="col-lg-3 col-md-6 col-sm-6">
-            <h3>services</h3>
+            <h3>Pages</h3>
 
             <ul>
-              <li>
-                <Link href="#">Faq</Link>
-              </li>
               <li>
                 <Link href="/aboutUs">About Us</Link>
               </li>
               <li>
-                <Link href="/OrderTraking">Track Order</Link>
+                <Link href="/contactUs">Contact Us</Link>
               </li>
               <li>
-                <Link href="#">Return Policy</Link>
+                <Link href="returnPolicy">Return Policy</Link>
               </li>
               <li>
                 <Link href="/privacyPolicy">Privacy Policy</Link>
               </li>
               <li>
-                <Link href="/privacyPolicy">Terms and Condition</Link>
+                <Link href="/tramsAndConditon">Terms and Condition</Link>
               </li>
             </ul>
           </div>
@@ -123,22 +33,25 @@ export default function Footer() {
 
             <ul>
               <li>
-                <Link href="/howToShop">How To Order</Link>
+                <Link href="/FQAs">Faq</Link>
               </li>
               <li>
+                <Link href="/OrderTraking">Track Order</Link>
+              </li>
+              <li>
+                <Link href="/howToOrder">How To Order</Link>
+              </li>
+              {/* <li>
                 <Link href="#">Safe Payments</Link>
               </li>
               <li>
-                <Link href="#">Why choose us</Link>
-              </li>
-              <li>
                 <Link href="#">Our Documents</Link>
+              </li> */}
+              <li>
+                <Link href="/productDelivery">Product Delivery</Link>
               </li>
               <li>
-                <Link href="#">Product Delivery</Link>
-              </li>
-              <li>
-                <Link href="#">Trade License: 00831</Link>
+                <a>Trade License: 00831</a>
               </li>
             </ul>
           </div>
@@ -151,8 +64,8 @@ export default function Footer() {
                 <Link href="#">
                   <i className="fa-solid fa-map-location-dot"></i>
                   <span>
-                    Baitus Sharif Mosjid Road, Cox's Bazar Sadar, Cox's Bazar,
-                    Cox's Bazar Sadar , District: Cox's Bazar, Division:
+                    Baitus Sharif Mosjid Road,
+                    Cox's Bazar Sadar , Cox's Bazar,
                     Chattogram
                   </span>
                 </Link>
@@ -171,7 +84,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="#">
-                  Certificate of Incorporation: CH-14776/2022 CONNECT WITH US
+                  Certificate: CH-14776/2022
                 </Link>
               </li>
             </ul>
@@ -213,8 +126,8 @@ export default function Footer() {
 
       <div className={`${classes.CopyWrite}`}>
         <p>
-          Copyright © DMS Exptess Australia All rights reserved. Developed By Memo
-          Australia IT Team.
+          Copyright © DMS Exptess Australia All rights reserved. Developed By
+          DMS IT Team.
         </p>
       </div>
     </footer>

@@ -46,28 +46,30 @@ Product Page(17-4-2023)(done)
 Card and(17-4-2023)(done)
 ========
 
-wish Page(30-4-2023)(done)(next day css)
+wish Page(30-4-2023)(done)
 =========
 
-profie Page(next day)
+profie Page(03-05-2023)(done)
 ===========
 
-All Product(next day)
-===========
-
-Blog(2nd next day)
-====
-
-Bloge Single(2nd next day)
-============
-
-About Us(2nd next day)
-========
-
-Order Taraking(3rd next day)
+Order Taraking(03-05-2023)(done)
 ==============
 
-other pages(3nd next day)
+Blog(03-05-2023)(done)
+====
+
+Bloge Single(04-05-2023)(done)
+============
+
+About Us, Trams & Condition, 
+Return Policy, FAQ's, 
+Privacy Policy, How To Order(04-05-2023)(done)
+=================
+
+Contac Us(04-05-2023)(done)
+=========
+
+All Product(next day)
 ===========
 
 order process Page

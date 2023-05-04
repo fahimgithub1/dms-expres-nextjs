@@ -1,5 +1,5 @@
 import LeftSide from "@/components/aboutUs/leftSide";
-import RightSide from "@/components/aboutUs/rightSide";
+import BlogRightSide from "@/components/blogs/blogRightSide";
 import HeaderCom from "@/lib/header";
 import Footer from "@/navAndFooter/footer";
 import Navber from "@/navAndFooter/navber";
@@ -37,10 +37,10 @@ export default function AboutUs() {
         <Navber />
         
         <section className="MainBodyTop HerosSection sectionMarginBot">
-          <div className="container mt-lg-2">
+          <div className="container mt-lg-2 pt-lg-4">
             <div className="row">
               <LeftSide />
-              <RightSide />
+              <BlogRightSide />
             </div>
           </div>
         </section>

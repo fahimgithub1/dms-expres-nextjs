@@ -29,7 +29,7 @@ export default function RewardsAndGift() {
       <main>
         <Navber />
 
-        <section className="MainBodyTop HerosSection sectionMarginBot">
+        <section className="MainBodyTop HerosSection sectionMarginBot pt-md-3">
           <div className="container mt-lg-2">
             <div className="row">
               {blogleft.map((item) => (
@@ -41,6 +41,7 @@ export default function RewardsAndGift() {
                   helight={item.helight}
                 />
               ))}
+              
               <BlogRightSide />
             </div>
           </div>
