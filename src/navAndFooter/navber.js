@@ -8,7 +8,7 @@ export default function Navber() {
     <nav>
       <div className="hideOnPhone">
         <TopNav />
-        {/* <MidNav /> */}
+        <MidNav />
         <BottomNev />
       </div>
 
